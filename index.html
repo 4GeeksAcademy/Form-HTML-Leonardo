@@ -15,8 +15,8 @@
 
     <form class="align-items-center">
         <!-- container -->
-        <div class="container-fluid">
-            <div class="row d-flex align-items-end mx-5">
+        <div class="container-fluid mt-5 rounded-sm">
+            <div class="row d-flex align-items-end mx-5 bg-light">
                 <div class="col-12">
                     <h1>Formulario de pago con Bootstrap</h1>
                 </div>
@@ -29,17 +29,17 @@
             </div>
             <div class="row d-flex align-items-end mx-5">
                 <!-- Card -->
-                <div class="col-md-5">
+                <div class="col-11 col-sm-12 col-md-5 ">
                     <label for="numeroTarjeta class=" form-label">Card #</label>
                     <input type="number" class="form-control" id="numeroTarjeta" placeholder="XXXXXXXXXXXXXXXX">
                 </div>
                 <!-- CVC -->
-                <div class="col-md-2">
+                <div class="col-11 col-sm-12 col-md-2">
                     <label for="CVC" class="form-label">CVC #</label>
                     <input type="number" class="form-control" id="CVC" placeholder="0000">
                 </div>
                 <!-- Monto -->
-                <div class="col-md-5">
+                <div class="col-11 col-sm-12 col-md-5">
                     <label>Monto</label>
                     <div class="input-group">
                         <div class="input-group-text">$</div>
@@ -48,14 +48,17 @@
 
                 </div>
 
-                <div class="row d-flex align-items-end ">
+
+
+                
+                <div class="row d-flex align-items-end">
                     <!-- Nombre -->
-                    <div class="col-md-6">
+                    <div class="col-12 col-sm-12 col-md-6">
                         <label for="firstName class=" form-label">Nombre</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Introduce tu Nombre">
                     </div>
                     <!-- Apellido -->
-                    <div class="col-md-6">
+                    <div class="col-12 col-sm-12 col-md-6">
                         <label for="lastNameclass=" form-label">Apellido</label>
                         <input type="text" class="form-control" id="lastName" placeholder="Introduce tu Apellido">
                     </div>
@@ -63,12 +66,12 @@
                 </div>
                 <div class="row d-flex align-items-end">
                     <!-- ciudad -->
-                    <div class="col-6">
+                    <div class="col-12 col-sm-12 col-md-6">
                         <label for="city class=" form-label">City</label>
                         <input type="text" class="form-control" id="city" placeholder="Introduce tu ciudad">
                     </div>
                     <!-- Provincia -->
-                    <div class="col-3">
+                    <div class="col-12 col-sm-12 col-md-3">
                         <label for="provincia">Provincia</label>
                         <select id="provincia" class="form-control">
                             <option value="" disabled selected>Introduce tu provincia</option>
@@ -80,34 +83,34 @@
                         </select>
                     </div>
                     <!-- codigo postal  -->
-                    <div class="col-3">
+                    <div class="col-12 col-sm-12 col-md-3">
                         <label for="postalCode" class="form-label">Código Postal</label>
                         <input type="number" class="form-control" id="postalCode" placeholder="Código postal">
                     </div>
                     <div class="row d-flex ">
                         <!-- Aceptamos -->
-                        <div class="col-12 col-md-6">
+                        <div class="col-11 col-sm-11 col-md-6">
                             <h3>Aceptamos</h3><br>
-                            <div class=" bg-secondary text-white p-3 d-inline mt-4 mb-5">
+                            <div class=" bg-secondary text-white p-1 d-inline ">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                     id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
-                                    <i class="fab fa-cc-mastercard fa-2x mr-4" style="margin-right: 10px;"></i>
+                                    <i class="fab fa-cc-mastercard "></i>
                                 </label>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                     id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
-                                    <i class="fab fa-cc-visa fa-2x" style="margin-right: 10px;"></i>
+                                    <i class="fab fa-cc-visa "></i>
                                 </label>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                     id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
-                                    <i class="fab fa-cc-diners-club fa-2x" style="margin-right: 10px;"></i>
+                                    <i class="fab fa-cc-diners-club "></i>
                                 </label>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                     id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
-                                    <i class="fab fa-cc-amex fa-2x"></i>
+                                    <i class="fab fa-cc-amex"></i>
                                 </label>
 
                             </div>
@@ -121,7 +124,7 @@
                         </div>
                     </div>
                     <!-- Botones -->
-                    <div class="row d-flex align-items-end">
+                    <div class="row d-flex align-items-end bg-light p-3">
                         <div class="col-12 mt-4 d-flex justify-content-end">
                             <button type="reset" class="btn btn-secondary mx-3">Cancelar</button>
                             <button type="submit" class="btn btn-primary">Enviar</button>
